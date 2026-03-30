@@ -2,12 +2,14 @@
     {
         "comarca": "Camp de Turia",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Camp de Morvedre",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Horta Nord",
@@ -18,67 +20,80 @@
     {
         "comarca": "Horta Sud",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Foia de Bunyol",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Ribera Alta",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Ribera Baixa",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Horta Oest",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Valencia Nord",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Valencia Sud",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "Albufera",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "La Safor",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "La Costera",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "La Vall d'Albaida",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "La Plana Baixa",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     {
         "comarca": "La Plana Alta",
         "enunciado": "",
-        "reto": ""
+        "reto": "",
+        "additionalInfo" : ""
     },
     { 
         "comarca": "La Llotja de la Seda",
