@@ -11,8 +11,9 @@
     },
     {
         "comarca": "Horta Nord",
-        "enunciado": "",
-        "reto": ""
+        "enunciado": "Cerámica Nolla",
+        "reto": "La Horta Nord es famosa por dos cosas: la horchata y los mosaicos. La cerámica Nolla es un tipo de teselas cerámicas geométricas que juntas crean mosaicos chulísimos.\nDeberéis encontrar al menos 3 mosaicos de cerámica Nolla diferentes y hacer una foto de cada uno de ellos. Tenéis 20 minutos para conseguirlo.",
+        "additionalInfo": ""
     },
     {
         "comarca": "Horta Sud",
