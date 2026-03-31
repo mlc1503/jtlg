@@ -1,15 +1,15 @@
 [
     {
         "comarca": "Camp de Turia",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo" : ""
+        "enunciado": "Waffle Pong",
+        "reto": "Consigue un gofre y un envase o paquete de comida pequeña que quepa en los agujeros del gofre (piensa en M&M's, ositos de gominola, guisantes, ese tipo de cosas). Coloca el gofre a 2 metros de distancia. Debes conseguir que una unidad de comida pequeña aterrice en cada uno de los agujeros completos del gofre para ganar.\nSolo puedes lanzar cada unidad de comida una vez. Si te quedas sin comida pequeña y no has rellenado el gofre, fracasas.\nIndependientemente del resultado, debes comerte el gofre y todo lo que hayas conseguido meter en él al final del desafío.",
+        "additionalInfo": ""
     },
     {
         "comarca": "Camp de Morvedre",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo" : ""
+        "enunciado": "Catulo y las Ruinas Romanas",
+        "reto": "El nombre Morvedre procede del latín 'muri veteri', que significa 'muros viejos', en alusión a la antigüedad de sus murallas defensivas. Visita una ruina o castillo de la época romana y recita de memoria al menos 10 versos de un poema en latín frente al monumento.\nPuedes practicar tantas veces como quieras, pero solo tienes una oportunidad para grabar tu recitación final.",
+        "additionalInfo": "Catullus fue un poeta romano, el cual tuvo un romance con 'Lesbia', el pseudónimo de otra poeta de la época a que le acabó dedicando 25 poemas. En algunos de sus poemas utiliza la Estrofa Sáfica, una estrofa de cuatro versos, tres endecasílabos y un pentasílabo."
     },
     {
         "comarca": "Horta Nord",
@@ -19,81 +19,81 @@
     },
     {
         "comarca": "Horta Sud",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo" : ""
+        "enunciado": "Encuentra un DJUNGELSKOG",
+        "reto": "Ve a IKEA y encuentra un DJUNGELSKOG en menos de 25 minutos desde que entras en la tienda. No puedes buscar qué es un DJUNGELSKOG, ni puedes pedir ayuda a nadie.\nNo hace falta que lo compres, solo envía una foto tuya con el DJUNGELSKOG para demostrar que lo has encontrado.",
+        "additionalInfo": ""
     },
     {
         "comarca": "Foia de Bunyol",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo" : ""
+        "enunciado": "Geocaché a Ciegas",
+        "reto": "Encuentra y registra un geocaché sin usar la aplicación durante la búsqueda final. Solo puedes mirar las coordenadas una vez antes de empezar, luego debes confiar en tu memoria y orientación natural para localizarlo. Toma una foto del geocaché encontrado y del registro firmado como prueba.",
+        "additionalInfo": ""
     },
     {
         "comarca": "Ribera Alta",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "Ribera Baixa",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "Horta Oest",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "Valencia Nord",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo" : ""
+        "enunciado": "Alimentando a los Patos",
+        "reto": "Ve a un parque con estanque o lago y alimenta a los patos salvajes. Debes conseguir que al menos 5 patos diferentes coman directamente de lo que les ofrezcas. Graba un vídeo como prueba mostrando a los patos acercándose y comiendo. Recuerda usar alimentos apropiados para patos como lechuga, guisantes, maíz o avena (no pan, ya que no es saludable para ellos).",
+        "additionalInfo": "Aunque el pan es el alimento más común que la gente da a los patos, no es nutritivo para ellos y puede causar problemas de salud. Los patos prefieren vegetales como lechuga troceada, guisantes congelados (descongelados), maíz, avena, uvas cortadas por la mitad o comida especializada para aves acuáticas."
     },
     {
         "comarca": "Valencia Sud",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo" : ""
+        "enunciado": "Peregrinación de los Ilustres",
+        "reto": "Visita el Cementerio General de Valencia y localiza las tumbas de al menos 3 personajes ilustres valencianos enterrados allí. Investiga previamente quiénes están sepultados y sus contribuciones a la historia, cultura o sociedad valenciana. En cada tumba, graba un breve vídeo (máximo 1 minuto) explicando quién fue esa persona y por qué es importante para Valencia. Debes visitar las tres tumbas en una sola visita.",
+        "additionalInfo": "El Cementerio General de Valencia, inaugurado en 1807, alberga las tumbas de numerosos personajes ilustres como Blasco Ibáñez (escritor), Joaquín Sorolla (pintor), o Concha Piquer (cantante y actriz), entre muchos otros. Además de ser un lugar de memoria histórica, el cementerio es considerado un museo al aire libre por su valor artístico y arquitectónico."
     },
     {
         "comarca": "Albufera",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "La Safor",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "La Costera",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "La Vall d'Albaida",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "La Plana Baixa",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     {
         "comarca": "La Plana Alta",
         "enunciado": "",
         "reto": "",
-        "additionalInfo" : ""
+        "additionalInfo": ""
     },
     { 
         "comarca": "La Llotja de la Seda",
