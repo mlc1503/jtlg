@@ -73,8 +73,8 @@
     },
     {
         "comarca": "La Costera",
-        "enunciado": "",
-        "reto": "",
+        "enunciado": "Abre un Museo Impopular",
+        "reto": "Ve a cualquier museo de la comarca y pasa 20 minutos recreando tres cosas que encuentres allí. Marca un área de 1,2m x 1,2m y coloca tus 3 objetos recreados y un cartel con el nombre de tu museo dentro - este es tu nuevo museo. En los siguientes 10 minutos, si algún desconocido pasa más de 5 segundos dentro de tu museo, fracasas. Al menos 5 desconocidos deben visitar y marcharse de tu museo durante los 10 minutos o debes empezar de nuevo.",
         "additionalInfo": ""
     },
     {
@@ -84,16 +84,16 @@
         "additionalInfo": ""
     },
     {
-        "comarca": "La Plana Baixa",
-        "enunciado": "",
-        "reto": "",
+        "comarca": "Plana Baixa",
+        "enunciado": "Mata el Tiempo, Luego Dilo",
+        "reto": "Tu tarea es completar tres de las cinco actividades mata-tiempo de la lista a continuación, y luego adivinar cuánto tiempo ha transcurrido. No puedes mirar ningún reloj, ni puedes ver el tiempo transcurrido en tu teléfono de grabación. Para completar el desafío, tu estimación debe estar dentro de los 5 minutos del tiempo real transcurrido. Tus opciones son: <ul><li> Moja completamente un objeto y observa cómo se seca por completo.</li><li> Desempaca y reempaca cada objeto de tus mochilas diez veces.</li><li> Nombra 100 personas valencianas reales diferentes.</li><li> Haz 200 jumping jacks cada uno.</li><li> Juega 5 rondas exitosas de veinte preguntas.</li></ul>",
         "additionalInfo": ""
     },
     {
         "comarca": "La Plana Alta",
-        "enunciado": "",
-        "reto": "",
-        "additionalInfo": ""
+        "enunciado": "Salvamento del Huevo",
+        "reto": "Ve a un supermercado y compra materiales para proteger a un huevo. Solo puedes usar elementos o productos que encuentres en el supermercado. Tienes un presupuesto máximo de 10€ y 15 minutos para hacer tus compras. Luego, usando únicamente los materiales comprados, construye una estructura protectora alrededor de un huevo crudo. Encuentra un lugar donde puedas lanzar tu huevo protegido desde una altura de al menos 5 metros. Ambos participantes del equipo deben lanzar su huevo. Para completar el desafío, los dos huevos deben sobrevivir intactos a la caída sin romperse.",
+        "additionalInfo": "Si hay alguna duda sobre el reto, William Osman tiene una serie donde ejecuta este reto y explica las normas del mismo"
     },
     { 
         "comarca": "La Llotja de la Seda",
