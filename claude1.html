@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comarques Showdown</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f5f5;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 750px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .status-card {
+            background: linear-gradient(135deg, #1e4d8b 0%, #2d5a9e 100%);
+            color: white;
+            border-radius: 20px;
+            padding: 50px 30px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .status-card h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        .status-card p {
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        .camp-card {
+            background-color: #dc3545;
+            border-radius: 20px;
+            padding: 0;
+            margin-bottom: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .camp-header {
+            background-color: #dc3545;
+            color: black;
+            text-align: center;
+            padding: 25px 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .camp-content {
+            background-color: white;
+            padding: 40px 30px;
+        }
+
+        .camp-content h3 {
+            color: #2c3e50;
+            font-size: 28px;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .camp-content p {
+            color: #2c3e50;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .btn {
+            flex: 1;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-fallar {
+            background-color: #ffc107;
+            color: #2c3e50;
+        }
+
+        .btn-completar {
+            background-color: #1e4d8b;
+            color: white;
+        }
+
+        .comarca-button {
+            background-color: #dc3545;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .comarca-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                font-size: 24px;
+                padding: 20px;
+            }
+
+            .status-card h2 {
+                font-size: 28px;
+            }
+
+            .status-card p {
+                font-size: 22px;
+            }
+
+            .camp-header {
+                font-size: 22px;
+            }
+
+            .camp-content h3 {
+                font-size: 22px;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            .comarca-button {
+                font-size: 22px;
+                padding: 25px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Comarques Showdown!
+    </div>
+
+    <div class="container">
+        <!-- Status Card -->
+        <div class="status-card">
+            <h2>User1 & User2</h2>
+            <p>0 Visitadas / 1 Conquistadas</p>
+        </div>
+
+        <!-- Camp de Turia Card -->
+        <div class="camp-card">
+            <div class="camp-header">Camp de Turia</div>
+            <div class="camp-content">
+                <h3>Puntería Fluvial</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam consequuntur doloremque commodi reiciendis deserunt voluptate ex, explicabo eligendi nam temporibus necessitatibus et? Facere sapiente impedit illum laboriosam quos placeat tempore provident quis molestias ratione odit assumenda fuga magni hic eveniet quia voluptatum, at perspiciatis eos, mollitia delectus veniam! Saepe, sint.</p>
+                <div class="button-group">
+                    <button class="btn btn-fallar">Fallar</button>
+                    <button class="btn btn-completar">Completar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comarca Buttons -->
+        <div class="comarca-button">La Ribera Baixa</div>
+        <div class="comarca-button">La Ribera Alta</div>
+        <div class="comarca-button">La Safor</div>
+    </div>
+
+    <script>
+        // Add click handlers for buttons
+        document.querySelectorAll('.btn-fallar').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Misión fallada');
+            });
+        });
+
+        document.querySelectorAll('.btn-completar').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('¡Misión completada!');
+            });
+        });
+
+        document.querySelectorAll('.comarca-button').forEach(btn => {
+            btn.addEventListener('click', function() {
+                alert('Seleccionada: ' + this.textContent);
+            });
+        });
+    </script>
+</body>
+</html>
