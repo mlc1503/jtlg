@@ -252,7 +252,11 @@
  
         // Initialize the game
         function init() {
-            askForPlayersNames();
+            const loaded = loadGame();
+
+            if (!loaded) {
+                askForPlayersNames();
+            }
             renderComarcaList();
             updateStats();
         }
@@ -278,6 +282,33 @@
 
             // Actualizar UI
             document.getElementById('players-names').textContent = gameState.players;
+        }
+
+        function saveGame() {
+            const stateToSave = {
+                ...gameState,
+                visitedComarcas: Array.from(gameState.visitedComarcas) // convertir Set → Array
+            };
+
+            localStorage.setItem('comarquesGameState', JSON.stringify(stateToSave));
+        }
+
+        function loadGame() {
+            const saved = localStorage.getItem('comarquesGameState');
+            
+            if (!saved) return false;
+
+            const parsed = JSON.parse(saved);
+
+            gameState = {
+                ...parsed,
+                visitedComarcas: new Set(parsed.visitedComarcas || [])
+            };
+
+            // Actualizar nombres en UI
+            document.getElementById('players-names').textContent = gameState.players;
+
+            return true;
         }
  
         // Render all comarca cards
@@ -375,6 +406,7 @@
                 gameState.visitedComarcas.add(index);
                 gameState.visitadas++;
                 updateStats();
+                saveGame();
             }
             
             // Expand this card
@@ -420,6 +452,7 @@
 
             updateStats();
             renderComarcaList();
+            saveGame();
         }
  
         // Fail a challenge
@@ -451,6 +484,7 @@
             
             updateStats();
             renderComarcaList();
+            saveGame();
         }
  
         // Update stats display
