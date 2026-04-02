@@ -9,7 +9,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-
+ 
             --red_color: #dc3545;
             --background_color: #e0e0e0;
             --white_color: #f5f5f5;
@@ -19,13 +19,13 @@
             --green_color: #28a745;
             --border_radius: 16px;
         }
-
+ 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             background-color: var(--background_color);
             padding: 0;
         }
-
+ 
         .header {
             background-color: var(--red_color);
             color: var(--white_color);
@@ -34,13 +34,13 @@
             font-size: 32px;
             font-weight: bold;
         }
-
+ 
         .container {
             max-width: 750px;
             margin: 0 auto;
             padding: 20px;
         }
-
+ 
         .status-card {
             background: var(--blue_color);
             color: var(--white_color);
@@ -50,79 +50,97 @@
             margin-bottom: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
+ 
         .status-card h2 {
             font-size: 36px;
             margin-bottom: 30px;
             font-weight: 500;
         }
-
+ 
         .status-card p {
             font-size: 28px;
             font-weight: 300;
         }
-
-        .camp-card {
+ 
+        .comarca-card {
             background-color: var(--red_color);
             border-radius: var(--border_radius);
-            padding: 0;
             margin-bottom: 20px;
             overflow: hidden;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            display: none;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
-        .camp-card.active {
-            display: block;
+ 
+        .comarca-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
-
-        .camp-header {
-            background-color: var(--red_color);
-            color: black;
+ 
+        .comarca-card.completed {
+            background-color: var(--green_color);
+        }
+ 
+        .comarca-card.failed {
+            background-color: #6c757d;
+        }
+ 
+        .comarca-header {
+            background-color: transparent;
+            color: var(--white_color);
             text-align: center;
-            padding: 25px 20px;
+            padding: 30px 20px;
             font-size: 28px;
             font-weight: bold;
+            cursor: pointer;
+            user-select: none;
         }
-
-        .camp-content {
+ 
+        .comarca-content {
             background-color: var(--white_color);
+            padding: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+        }
+ 
+        .comarca-card.expanded .comarca-content {
+            max-height: 2000px;
             padding: 40px 30px;
         }
-
-        .camp-content h3 {
+ 
+        .comarca-content h3 {
             color: var(--jet_lag_black);
             font-size: 28px;
             margin-bottom: 25px;
             font-weight: 600;
         }
-
-        .camp-content .reto-text {
+ 
+        .comarca-content .reto-text {
             color: var(--jet_lag_black);
             font-size: 16px;
             line-height: 1.6;
             margin-bottom: 20px;
             white-space: pre-line;
         }
-
-        .camp-content .additional-info {
+ 
+        .comarca-content .additional-info {
             color: #6c757d;
             font-size: 14px;
             font-style: italic;
             line-height: 1.5;
             margin-bottom: 30px;
             padding: 15px;
-            background-color: var(--white_color);
+            background-color: #f8f9fa;
             border-left: 4px solid var(--yellow_color);
             border-radius: 4px;
         }
-
+ 
         .button-group {
             display: flex;
             gap: 20px;
             justify-content: space-between;
         }
-
+ 
         .btn {
             flex: 1;
             padding: 15px 30px;
@@ -133,82 +151,47 @@
             cursor: pointer;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
+ 
         .btn:hover {
             transform: translateY(-2px);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-
+ 
         .btn-fallar {
             background-color: var(--yellow_color);
             color: var(--jet_lag_black);
         }
-
+ 
         .btn-completar {
             background-color: var(--blue_color);
             color: var(--white_color);
         }
-
-        .comarca-button {
-            background-color: var(--red_color);
-            color: var(--white_color);
-            text-align: center;
-            padding: 30px 20px;
-            border-radius: var(--border_radius);
-            margin-bottom: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.2s, box-shadow 0.2s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .comarca-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        .comarca-button.completed {
-            background-color: var(--green_color)
-        }
-
-        .comarca-button.failed {
-            background-color: #6c757d;
-        }
-
-        .comarca-button.visited {
-            opacity: 0.7;
-        }
-
+ 
         @media (max-width: 600px) {
             .header {
                 font-size: 24px;
                 padding: 20px;
             }
-
+ 
             .status-card h2 {
                 font-size: 28px;
             }
-
+ 
             .status-card p {
                 font-size: 22px;
             }
-
-            .camp-header {
-                font-size: 22px;
-            }
-
-            .camp-content h3 {
-                font-size: 22px;
-            }
-
-            .button-group {
-                flex-direction: column;
-            }
-
-            .comarca-button {
+ 
+            .comarca-header {
                 font-size: 22px;
                 padding: 25px 15px;
+            }
+ 
+            .comarca-content h3 {
+                font-size: 22px;
+            }
+ 
+            .button-group {
+                flex-direction: column;
             }
         }
     </style>
@@ -217,25 +200,20 @@
     <div class="header">
         Comarques Showdown!
     </div>
-
+ 
     <div class="container">
         <!-- Status Card -->
         <div class="status-card">
             <h2 id="players-names">User1 & User2</h2>
             <p id="stats">0 Visitadas / 0 Conquistadas</p>
         </div>
-
-        <!-- Active Challenge Card (populated dynamically) -->
-        <div id="active-challenge" class="camp-card">
-            <!-- Dynamically filled -->
-        </div>
-
-        <!-- Comarca Buttons (populated dynamically) -->
+ 
+        <!-- Comarca Cards (populated dynamically) -->
         <div id="comarca-list">
             <!-- Dynamically filled -->
         </div>
     </div>
-
+ 
     <script>
         // Sample data structure
         const data = [
@@ -261,7 +239,7 @@
                 additionalInfo: ""
             },
         ];
-
+ 
         // Game state
         let gameState = {
             players: "User1 & User2",
@@ -271,44 +249,65 @@
             comarcasStatus: {}, // { index: 'pending' | 'completed' | 'failed' }
             visitedComarcas: new Set() // Track which comarcas have been visited
         };
-
+ 
         // Initialize the game
         function init() {
             renderComarcaList();
             updateStats();
         }
-
-        // Render all comarca buttons
+ 
+        // Render all comarca cards
         function renderComarcaList() {
             const container = document.getElementById('comarca-list');
             container.innerHTML = '';
             
             data.forEach(challenge => {
-                const button = document.createElement('div');
-                button.className = 'comarca-button';
-                button.textContent = challenge.comarca;
-                button.dataset.index = challenge.index;
+                const card = document.createElement('div');
+                card.className = 'comarca-card';
+                card.dataset.index = challenge.index;
                 
                 // Apply status classes
                 const status = gameState.comarcasStatus[challenge.index];
                 if (status === 'completed') {
-                    button.classList.add('completed');
+                    card.classList.add('completed');
                 } else if (status === 'failed') {
-                    button.classList.add('failed');
+                    card.classList.add('failed');
                 }
                 
-                button.addEventListener('click', () => showChallenge(challenge.index));
-                container.appendChild(button);
+                // Check if this is the active challenge
+                if (gameState.activeChallenge === challenge.index) {
+                    card.classList.add('expanded');
+                }
+                
+                card.innerHTML = `
+                    <div class="comarca-header" onclick="toggleChallenge(${challenge.index})">
+                        ${challenge.comarca}
+                    </div>
+                    <div class="comarca-content">
+                        <h3>${challenge.enunciado}</h3>
+                        <div class="reto-text">${challenge.reto}</div>
+                        ${challenge.additionalInfo ? `<div class="additional-info"><strong>Información adicional:</strong> ${challenge.additionalInfo}</div>` : ''}
+                        <div class="button-group">
+                            <button class="btn btn-fallar" onclick="event.stopPropagation(); failChallenge(${challenge.index})">Fallar</button>
+                            <button class="btn btn-completar" onclick="event.stopPropagation(); completeChallenge(${challenge.index})">Completar</button>
+                        </div>
+                    </div>
+                `;
+                
+                container.appendChild(card);
             });
         }
-
-        // Show a specific challenge
-        function showChallenge(index) {
+ 
+        // Toggle a specific challenge
+        function toggleChallenge(index) {
             const challenge = data.find(c => c.index === index);
             if (!challenge) return;
             
-            // Check if there's a different active challenge already open
-            if (gameState.activeChallenge !== null && gameState.activeChallenge !== index) {
+            const card = document.querySelector(`.comarca-card[data-index="${index}"]`);
+            const isExpanded = card.classList.contains('expanded');
+            
+            // If trying to expand a different card while one is open
+            if (!isExpanded && gameState.activeChallenge !== null && gameState.activeChallenge !== index) {
                 const currentChallenge = data.find(c => c.index === gameState.activeChallenge);
                 const confirmed = confirm(
                     `Ya tienes abierto el desafío de ${currentChallenge.comarca}. ` +
@@ -320,7 +319,14 @@
                 }
                 
                 // Fail the current challenge
-                failChallenge(gameState.activeChallenge, true); // Pass true to skip hiding
+                failChallenge(gameState.activeChallenge);
+            }
+            
+            // If card is already expanded, just collapse it
+            if (isExpanded) {
+                card.classList.remove('expanded');
+                gameState.activeChallenge = null;
+                return;
             }
             
             // Check if this comarca hasn't been visited yet
@@ -334,31 +340,16 @@
                 gameState.visitedComarcas.add(index);
                 gameState.visitadas++;
                 updateStats();
-                renderComarcaList(); // Update the visual state
             }
             
+            // Expand this card
+            card.classList.add('expanded');
             gameState.activeChallenge = index;
             
-            const container = document.getElementById('active-challenge');
-            container.className = 'camp-card active';
-            
-            container.innerHTML = `
-                <div class="camp-header">${challenge.comarca}</div>
-                <div class="camp-content">
-                    <h3>${challenge.enunciado}</h3>
-                    <div class="reto-text">${challenge.reto}</div>
-                    ${challenge.additionalInfo ? `<div class="additional-info"><strong>Información adicional:</strong> ${challenge.additionalInfo}</div>` : ''}
-                    <div class="button-group">
-                        <button class="btn btn-fallar" onclick="failChallenge(${index})">Fallar</button>
-                        <button class="btn btn-completar" onclick="completeChallenge(${index})">Completar</button>
-                    </div>
-                </div>
-            `;
-            
-            // Scroll to the challenge
-            container.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            // Scroll to the card
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         }
-
+ 
         // Complete a challenge
         function completeChallenge(index) {
             const wasCompleted = gameState.comarcasStatus[index] === 'completed';
@@ -369,37 +360,42 @@
             
             gameState.comarcasStatus[index] = 'completed';
             
-            updateStats();
-            hideActiveChallenge();
-            renderComarcaList();
-        }
-
-        // Fail a challenge
-        function failChallenge(index, skipHide = false) {
-            gameState.comarcasStatus[index] = 'failed';
+            // Collapse the card
+            const card = document.querySelector(`.comarca-card[data-index="${index}"]`);
+            if (card) {
+                card.classList.remove('expanded');
+            }
+            gameState.activeChallenge = null;
             
             updateStats();
-            if (!skipHide) {
-                hideActiveChallenge();
-            }
             renderComarcaList();
         }
-
-        // Hide the active challenge card
-        function hideActiveChallenge() {
-            const container = document.getElementById('active-challenge');
-            container.classList.remove('active');
+ 
+        // Fail a challenge
+        function failChallenge(index) {
+            gameState.comarcasStatus[index] = 'failed';
+            
+            // Collapse the card
+            const card = document.querySelector(`.comarca-card[data-index="${index}"]`);
+            if (card) {
+                card.classList.remove('expanded');
+            }
             gameState.activeChallenge = null;
+            
+            updateStats();
+            renderComarcaList();
         }
-
+ 
         // Update stats display
         function updateStats() {
             document.getElementById('stats').textContent = 
                 `${gameState.visitadas} Visitadas / ${gameState.conquistadas} Conquistadas`;
         }
-
+ 
         // Initialize on page load
         init();
     </script>
 </body>
 </html>
+ 
+
